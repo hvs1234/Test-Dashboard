@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+:root {
+  --bg: rgb(246, 246, 246);
+  --white: white;
+  --grey1: rgb(21, 21, 21);
+  --grey2: rgb(173, 170, 170);
+  --grey3: rgb(50, 50, 50);
+  --heading: rgb(252, 252, 252);
+  --para-color: rgb(240, 240, 240);
+  --gradient: linear-gradient(0deg, rgb(53, 58, 99) 0%, rgb(86, 130, 160) 100%);
+  --gradient-btn: linear-gradient(to right, rgb(144, 30, 53), rgb(177, 27, 57));
+  --btn-hover: linear-gradient(to right, rgb(111, 17, 36), rgb(180, 30, 60));
+  --helper: #8490ff;
+  --aqua: aqua;
+  --crimson: crimson;
+  --pink1: rgb(255, 54, 94);
+  --box-shadow1: 20px -20px rgb(60, 59, 59);
+  --black: black;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background: #f1f1f1;
+}
+
+/* h1 {
+  font-size: 6rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  line-height: 1.8;
+} */
+
+a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+/* .grid {
+  display: grid;
+  gap: 9rem;
+} */
+
+.grid-one-columns {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-two-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-five-columns {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.btn {
+  background: var(--gradient-btn);
+  padding: 1rem 4rem;
+  border: 0;
+  outline: 0;
+  color: var(--para-color);
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background: var(--btn-hover);
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+}
